@@ -7,6 +7,7 @@
 - CSS (BEM Naming)
 - Box Model
 - Pseudo-elements
+- Media Queries 
 
 🎯 What I practiced:
 - Writing clean, structured CSS using BEM
