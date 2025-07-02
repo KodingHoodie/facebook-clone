@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Facebook Clone</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font5/all.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <!--Left: Header logo-->
+        <section>
+            <div class="header__logo-section">
+                <div class="header__logo-icon">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="header__logo-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-facebook">
+                </div>
+
+                <!--ADD ON BY JOE TO MAKE RESPONSIVE SITE-->
+                <div class="header__mobile-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--Center: Menu Tabs-->
+        <section>
+            <div class="header__menu-tabs">
+                <div class="header__menu-tab header__menu-tab--active">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="header__menu-tab header__menu-tab">
+                    <i class="fas fa-flag">
+                        <div class="header__notification-bubble">
+                            3
+                        </div>
+                    </i>
+                </div>
+                <div class="header__menu-tab">
+                    <i class="fas fa-tv">
+                        <div class="header__notification-bubble">
+                            9
+                        </div>
+                    </i>
+                </div>
+                <div class="header__menu-tab">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="header__menu-tab">
+                    <i class="fas fa-users"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--Right: Header Account section-->
+        <section>
+            <div class="header__account">
+                <div class="header__actions-section">
+                    <!--when project is done replace the image with your actual image-->
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" class="header__user-img">
+                    <span class="header__user-name">John Doe</span>
+                    <a href="#" class="header__circle-link">
+                        <i class="header__link-icon fas fa-plus"></i>
+                    </a>
+                    <!--Bell Icon with Notification-->
+                    <div class="header__icon-wrapper">
+                        <a href="#" class="header__circle-link">
+                            <i class="header__link-icon fas fa-bell"></i>
+                        </a>
+                        <div class="header__notification-challenge">
+                            4
+                        </div>
+                    </div>
+
+                    <!--Messenger Icon with Notification-->
+                    <div class="header__icon-wrapper">
+                        <a href="#" class="header__circle-link">
+                            <i class="header__link-icon fab fa-facebook-messenger"></i>
+                        </a>
+                        <div class="header__notification-challenge">
+                            8
+                        </div>
+                    </div>
+
+
+                    <a href="#" class="header__circle-link">
+                        <i class="header__link-icon fas fa-sort-down"></i>
+                    </a>
+                </div>
+        </section>
+    </header>
+
+    <!--Content Area:left side navigation. User profile section-->
+    <section class="content-area content-area--feed">
+        <section class="sidenav">
+            <div class="sidenav__item">
+                <img src="https://randomuser.me/API/portraits/men/22.jpg" class="sidenav__item-img">
+                <span class="sidenav__item-title">
+                    John Doe
+                </span>
+            </div>
+            <!--friends section-->
+            <div class="sidenav__item">
+                <div class="sidenav__item-icon">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <span class="sidenav__item-title">
+                    Friends
+                </span>
+            </div>
+            <!-- Pages/Flag section-->
+            <div class="sidenav__item">
+                <div class="sidenav__item-icon">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <span class="sidenav__item-title">
+                    Pages
+                    <span class="sidenav__item-notification">
+                        <div class="sidenav__item-notification-circle"></div>9+ new
+                    </span>
+                </span>
+            </div>
+            <!--Groups section-->
+            <div class="sidenav__item">
+                <div class="sidenav__item-icon sidenav__item-icon--circle-white">
+                    <i class="fas fa-users"></i>
+                </div>
+                <span class="sidenav__item-title">
+                    Groups
+                    <span class="sidenav__item-notification">
+                        <div class="sidenav__item-notification-circle"></div>5+ new
+                    </span>
+                </span>
+            </div>
+            <!--Marketplace section-->
+            <div class="sidenav__item">
+                <div class="sidenav__item-icon sidenav__item-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <span class="sidenav__item-title">
+                    Maketplace
+                </span>
+            </div>
+            <!--See more section-->
+            <div class="sidenav__item">
+                <div class="sidenav__item-icon sidenav__item-icon--circle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span class="sidenav__item-title">
+                    See More
+                </span>
+            </div>
+
+            <!--lower section of side nav: Your shortcuts-->
+            <div class="sidenav__line"></div>
+            <span class="sidenav__heading-title">
+                Your Shortcuts
+            </span>
+            <!--Nav 1-->
+            <div class="sidenav__item">
+                <!-- <div class="sidenav__item-icon sidenav__item-icon--circle-white">
+                            <i class="fas fa-users"></i>
+                        </div> -->
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmkvrelCBuxipTqd4F3rmOOBqtB7xsE29iNA&s"
+                    class="sidenav__item-img">
+                <span class="sidenav__item-title">
+                    CodingPhase Groups
+                </span>
+            </div>
+            <!--Nav 2-->
+            <div class="sidenav__item">
+                <img src="https://www.capitalism.com/wp-content/uploads/2019/04/tai-lopez-e1558127878671.jpg"
+                    class="sidenav__item-img">
+                <span class="sidenav__item-title">
+                    Marketing Secrets
+                </span>
+            </div>
+            <!--Nav 3-->
+            <div class="sidenav__item">
+                <img src="https://m.media-amazon.com/images/I/71yKRzoV6+L.jpg" class="sidenav__item-img">
+                <span class="sidenav__item-title">
+                    Hip Hop Music
+                </span>
+            </div>
+            <!--Nav 4-->
+            <div class="sidenav__item">
+                <img src="https://static.vecteezy.com/system/resources/previews/022/734/075/non_2x/various-sports-balls-graphics-vector.jpg"
+                    class="sidenav__item-img">
+                <span class="sidenav__item-title">
+                    Sports Life
+                </span>
+            </div>
+
+            <!--See more dropdown-->
+            <div class="sidenav__item">
+                <div class="sidenav__item-icon sidenav__item-icon--circle">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <span class="sidenav__item-title">
+                    See More
+                </span>
+            </div>
+            </div>
+        </section>
+
+        <!--FEED: Top Middle section-->
+        <section class="feed">
+            <!--Create a Story: first box-->
+            <div class="stories">
+                <div class="stories__video-container">
+                    <img class="stories__bg"
+                        src="https://i.ytimg.com/vi/MLi5dbT6Abw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBsL5yZYaWS2uYhEXP42Vodh4RGpA">
+                    <div class="stories__title">
+                        <div class="stories__new-btn">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        Create a Story
+                    </div>
+                </div>
+                <!--Second story box-->
+                <div class="stories__video-container stories__video-container--plain">
+                    <img class="stories__bg"
+                        src="https://media2.giphy.com/media/Mab0VG2Rqarpbbku33/giphy.gif?cid=6c09b952lge5nyh605sr8srw6h2edvz57mq9dj5uekfn7w9v&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
+                    <div class="stories__title">
+                        <img class="stories__user" src="https://randomuser.me/api/portraits/women/95.jpg">
+                        Cindy Carol
+                    </div>
+                </div>
+                <!--third -->
+                <div class="stories__video-container stories__video-container--plain">
+                    <img class="stories__bg"
+                        src="https://media0.giphy.com/media/1l307VjEIRFp2t4eJB/giphy.gif?cid=6c09b952abcq6l3ss9uhq37lrdbxot8fy9ucg4mgam5u4n4i&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
+                    <div class="stories__title">
+                        <img class="stories__user" src="https://randomuser.me/api/portraits/men/13.jpg">
+                        Donald Trump
+                    </div>
+                </div>
+                <!--Fourth-->
+                <div class="stories__video-container stories__video-container--plain">
+                    <img class="stories__bg" src="https://i.makeagif.com/media/11-18-2024/WT3cCL.gif">
+                    <div class="stories__title">
+                        <img class="stories__user" src="https://randomuser.me/api/portraits/men/53.jpg">
+                        Jon Jones
+                    </div>
+                </div>
+                <!--Fifth-->
+                <div class="stories__video-container stories__video-container--plain">
+                    <img class="stories__bg"
+                        src="https://media1.giphy.com/media/YqsquT1YYIxgHcZu7Z/giphy.gif?cid=6c09b952es1dpqm1n0xlbfxxwoobd2aodcvpy1hlsi4rezk4&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g">
+                    <div class="stories__title">
+                        <img class="stories__user" src="https://randomuser.me/api/portraits/men/2.jpg">
+                        Joe Biden
+                    </div>
+                </div>
+                <!--Sixth-->
+                <div class="stories__video-container stories__video-container--plain">
+                    <img class="stories__bg"
+                        src="https://i.pinimg.com/originals/77/ce/c1/77cec1ff3ef32c5f4ee295b00d8dab72.gif">
+                    <div class="stories__title">
+                        <img class="stories__user" src="https://randomuser.me/api/portraits/women/9.jpg">
+                        Monica Monroe
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Feed Section: What's on your mind section-->
+            <div class="feed__box submitpost">
+                <div class="newpost">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" class="newpost__user-img">
+                    <input type="text" name="user" placeholder="What's on your mind, John?">
+                </div>
+                <div class="hline"></div>
+
+                <!--POST TYPES: Live video, Photo/Video, Feeling/Activity-->
+                <div class="post-types">
+                    <div class="post-types__item">
+                        <i class="fas fa-video"></i>
+                        <span class="post-types__title">Video</span>
+                    </div>
+                    <div class="post-types__item">
+                        <i class="fas fa-photo-video"></i>
+                        <span class="post-types__title">Photo/Video</span>
+                    </div>
+                    <div class="post-types__item">
+                        <i class="fas fa-laugh-beam"></i>
+                        <span class="post-types__title">Feeling/Activity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--CHALLENGE BY JOE: TO ADD THE CREATE ROOM BOX. BUTTON AND ICONS NEXT TO EACH OTHER-->
+            <div class="create-room">
+                <div class="create-room__camera-button"></div>
+
+                <button class="create-room__button">
+                    <i class="fas fa-video"></i>
+                    Create Room
+                </button>
+
+                <!--FIRST AVATAR-->
+                <div class="create-room__avatars">
+                    <img src="https://randomuser.me/API/portraits/women/67.jpg" class="create-room__img">
+                    <div class="create-room__notification--green"></div>
+                </div>
+                <!--SECOND AVATAR-->
+                <div class="create-room__avatars">
+                    <img src="https://randomuser.me/API/portraits/women/11.jpg" class="create-room__img">
+                    <div class="create-room__notification--green"></div>
+                </div>
+                <!--THIRD AVATAR-->
+                <div class="create-room__avatars">
+                    <img src="https://randomuser.me/API/portraits/men/57.jpg" class="create-room__img">
+                    <div class="create-room__notification--green"></div>
+                </div>
+                <!--FOURTH AVATAR-->
+                <div class="create-room__avatars">
+                    <img src="https://randomuser.me/API/portraits/women/45.jpg" class="create-room__img">
+                    <div class="create-room__notification--green"></div>
+                </div>
+                <!--FIFTH AVATAR-->
+                <div class="create-room__avatars">
+                    <img src="https://randomuser.me/API/portraits/men/33.jpg" class="create-room__img">
+                    <div class="create-room__notification--green"></div>
+                </div>
+                <!--SIXTH AVATAR-->
+                <div class="create-room__avatars">
+                    <img src="https://randomuser.me/API/portraits/women/21.jpg" class="create-room__img">
+                    <div class="create-room__notification--green"></div>
+                </div>
+                <!--SEVENTH AVATAR-->
+                <div class="create-room__avatars">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <!-- PHOTO POST BELOW: WHAT'S ON YOUR MIND SECTION -->
+            <div class="feed__box photopost">
+                <div class="photopost__info">
+                    <div class="photopost__left">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg">
+                        <div class="photopost__details">
+                            <span class="photopost__name">John Doe</span>
+                            <span class="photopost__date">December 17 at 10:45pm
+                                <i class="fas fa-user-friends"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+                <!--Image of the actual post-->
+                <div class="photopost__description">
+                    Missing my old home town Baguio City, Philippines 🌲🏔️🏙️
+                </div>
+                <div class="photopost__image">
+                    <img src="https://primer.com.ph/blog/wp-content/uploads/sites/14/2018/08/top-photo-1024x768.jpg">
+                </div>
+                <!--Reaction section below post: Emoji section-->
+                <div class="photopost__stats">
+                    <div class="photopost__stats-emojis">
+                        <div class="emoji-circle emoji-circle--blue">
+                            <i class="fas fa-thumbs-up"></i>
+                        </div>
+                        <!--second emoji-->
+                        <div class="emoji-circle emoji-circle--red">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <!--third emoji-->
+                        <div class="emoji-circle emoji-circle--yellow">
+                            <i class="fas fa-surprise"></i>
+                        </div>
+                        3.3k
+                    </div>
+                    <div class="photopost__stats-share">
+                        788 Comments 73 Shares
+                    </div>
+                </div>
+                <div class="hline"></div>
+                <div class="photopost__actions">
+                    <a href="#" class="photopost__link">
+                        <i class="fas fa-thumbs-up"></i> Like
+                    </a>
+                    <a href="#" class="photopost__link">
+                        <i class="fas fa-comment"></i> Comment
+                    </a>
+                    <a href="#" class="photopost__link">
+                        <i class="fas fa-share"></i> Share
+                    </a>
+                </div>
+                <div class="hline"></div>
+            </div>
+        </section>
+    </section>
+
+    <!-- FLOATING MESSENGER: LAST SECTION OF THE PROJECT -->
+    <section class="floatingmsg">
+        <div class="floatingmsg__bubble">
+            <img src="https://randomuser.me/API/portraits/women/3.jpg">
+            <div class="floatingmsg__notification">1</div>
+        </div>
+        <!--second bubble-->
+        <div class="floatingmsg__bubble">
+            <img src="https://randomuser.me/API/portraits/women/7.jpg">
+            <div class="floatingmsg__notification-green"></div>
+        </div>
+        <!--third bubble-->
+        <div class="floatingmsg__bubble">
+            <img src="https://randomuser.me/API/portraits/women/34.jpg">
+            <div class="floatingmsg__notification">5</div>
+        </div>
+        <!--forth bubble-->
+        <div class="floatingmsg__bubble">
+            <img src="https://randomuser.me/API/portraits/men/34.jpg">
+            <div class="floatingmsg__notification-green"></div>
+        </div>
+        <!--fifth bubble-->
+        <div class="floatingmsg__bubble">
+            <img src="https://randomuser.me/API/portraits/men/67.jpg">
+            <div class="floatingmsg__notification-green"></div>
+        </div>
+        <!--last bubble edit icon-->
+        <div class="floatingmsg__bubble">
+            <i class="fas fa-edit"></i>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
