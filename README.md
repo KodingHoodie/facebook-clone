@@ -14,3 +14,5 @@
 - Creating a responsive layout without frameworks
 - Working with visual hierarchy and spacing
 - Improving naming conventions and commenting code
+
+![fb screenshot](https://github.com/user-attachments/assets/ac7fa0bd-77f8-4790-b68c-648f7b80c13a)
